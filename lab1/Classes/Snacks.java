@@ -13,13 +13,13 @@ public class Snacks extends Meal{
     }
 
     //    создание нового блюда
-    public void addNewSnacks(String name, String description, int price, List<Snacks> listOfSnacks){
+    public static void addNewSnacks(String name, String description, int price, List<Snacks> listOfSnacks){
         listOfSnacks.add(new Snacks(name, description, price));
 
     }
 
     //    удаление из меню какого-либо блюда по наименованию
-    public void deleteVegetarianItem(String name, List<Snacks> listOfSnacks){
+    public static void deleteVegetarianItem(String name, List<Snacks> listOfSnacks){
         int i = 0;
         for (Snacks item: listOfSnacks){
             if (item.getName().equals(name)){

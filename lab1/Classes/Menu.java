@@ -5,18 +5,18 @@ import java.util.List;
 
 public class Menu {
 //    полный список всего меню
-    public List<VegetarianMeal> vegetarianMeals = new ArrayList<>();
-    public List<MainDish> mainDishes = new ArrayList<>();
-    public List<Snacks> snacks = new ArrayList<>();
-    public List<SoftDrink> softDrinks = new ArrayList<>();
-    public List<AlcoholicDrink> alcoholicDrinks = new ArrayList<>();
+    public static List<VegetarianMeal> vegetarianMeals = new ArrayList<>();
+    public static List<MainDish> mainDishes = new ArrayList<>();
+    public static List<Snacks> snacks = new ArrayList<>();
+    public static List<SoftDrink> softDrinks = new ArrayList<>();
+    public static List<AlcoholicDrink> alcoholicDrinks = new ArrayList<>();
 
     public List<VegetarianMeal> getVegetarianMeals() {
         return vegetarianMeals;
     }
 
     public void setVegetarianMeals(List<VegetarianMeal> vegetarianMeals) {
-        this.vegetarianMeals = vegetarianMeals;
+        Menu.vegetarianMeals = vegetarianMeals;
     }
 
     public List<MainDish> getMainDishes() {
@@ -24,7 +24,7 @@ public class Menu {
     }
 
     public void setMainDishes(List<MainDish> mainDishes) {
-        this.mainDishes = mainDishes;
+        Menu.mainDishes = mainDishes;
     }
 
     public List<Snacks> getSnacks() {
@@ -32,7 +32,7 @@ public class Menu {
     }
 
     public void setSnacks(List<Snacks> snacks) {
-        this.snacks = snacks;
+        Menu.snacks = snacks;
     }
 
     public List<SoftDrink> getSoftDrinks() {
@@ -40,7 +40,7 @@ public class Menu {
     }
 
     public void setSoftDrinks(List<SoftDrink> softDrinks) {
-        this.softDrinks = softDrinks;
+        Menu.softDrinks = softDrinks;
     }
 
     public List<AlcoholicDrink> getAlcoholicDrinks() {
@@ -48,7 +48,7 @@ public class Menu {
     }
 
     public void setAlcoholicDrinks(List<AlcoholicDrink> alcoholicDrinks) {
-        this.alcoholicDrinks = alcoholicDrinks;
+        Menu.alcoholicDrinks = alcoholicDrinks;
     }
 
     @Override

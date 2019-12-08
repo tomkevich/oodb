@@ -1,5 +1,6 @@
 package Classes;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -16,13 +17,13 @@ public class VegetarianMeal extends Meal {
     ;
 
     //    создание нового блюда
-    public void addNewVegetarian(String name, String description, int price, List<VegetarianMeal> list) {
+    public  static void addNewVegetarian(String name, String description, int price, List<VegetarianMeal> list) {
         VegetarianMeal v = new VegetarianMeal(name, description, price);
         list.add(v);
     }
 
     //    удаление из меню какого-либо блюда по наименованию
-    public void deleteVegetarianItem(String name, List<VegetarianMeal> listOfVegetarianMeals) {
+    public static void deleteVegetarianItem(String name, List<VegetarianMeal> listOfVegetarianMeals) {
         int i = 0;
         for (VegetarianMeal v : listOfVegetarianMeals) {
             if (name.equals(v.getName())) {
@@ -40,4 +41,11 @@ public class VegetarianMeal extends Meal {
                 ", price=" + price +
                 '}';
     }
+
+    public static Comparator<VegetarianMeal> SORT_BY_NAME = new Comparator<VegetarianMeal>() {
+        @Override
+        public int compare(VegetarianMeal one, VegetarianMeal other) {
+            return one.name.compareTo(other.name);
+        }
+    };
 }

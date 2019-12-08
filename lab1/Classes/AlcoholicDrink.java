@@ -13,13 +13,13 @@ public class AlcoholicDrink extends Drink {
     }
 
     //    создание нового напитка
-    public void addNewAlcoholicDrink(String name, double amount, int price, List<AlcoholicDrink> listOfDrink){
+    public static void addNewAlcoholicDrink(String name, double amount, int price, List<AlcoholicDrink> listOfDrink){
         listOfDrink.add(new AlcoholicDrink(name, amount, price));
 
     }
 
     //    удаление из меню какого-либо напитка по наименованию
-    public void deleteAlcoholicItem(String name, List<AlcoholicDrink> list){
+    public static void deleteAlcoholicItem(String name, List<AlcoholicDrink> list){
         int i = 0;
         for (AlcoholicDrink item: list){
             if (item.getName().equals(name)){

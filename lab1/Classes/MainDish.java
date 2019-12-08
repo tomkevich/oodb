@@ -10,11 +10,6 @@ public class MainDish extends Meal {
         super(name, description, price);
     }
 
-    public MainDish(){
-        super();
-    }
-
-
 //    создание нового блюда
     public static void addNewMainDish(String name, String description, int price, List<MainDish> listOfMainDish){
         listOfMainDish.add(new MainDish(name, description, price));

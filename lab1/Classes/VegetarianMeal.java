@@ -11,7 +11,7 @@ public class VegetarianMeal extends Meal {
     }
 
     public VegetarianMeal() {
-        super();
+        super(); // вызов конструктора супер-класса
     }
 
     ;

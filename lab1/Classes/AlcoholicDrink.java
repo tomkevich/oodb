@@ -8,10 +8,6 @@ public class AlcoholicDrink extends Drink {
         super(name, amount, price);
     }
 
-    public AlcoholicDrink(){
-        super();
-    }
-
     //    создание нового напитка
     public static void addNewAlcoholicDrink(String name, double amount, int price, List<AlcoholicDrink> listOfDrink){
         listOfDrink.add(new AlcoholicDrink(name, amount, price));

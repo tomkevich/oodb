@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Salad",
+    "description": "This is vegetarian meal!",
+    "price": 500
+  },
+  {
+    "name": "Cheesecakes",
+    "description": "This is also vegetarian meal",
+    "price": 650
+  }
+]

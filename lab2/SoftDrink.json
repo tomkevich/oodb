@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Lemonade",
+    "amount": 350.0,
+    "price": 150
+  },
+  {
+    "name": "Mohito",
+    "amount": 450.0,
+    "price": 250
+  }
+]

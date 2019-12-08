@@ -14,7 +14,7 @@ public class VegetarianMeal extends Meal {
 
     //    создание нового блюда
     public  static void addNewVegetarian(String name, String description, int price, List<VegetarianMeal> list) {
-        VegetarianMeal v = new VegetarianMeal(name, description, price);
+        VegetarianMeal v = new VegetarianMeal(name, description, price); //создаем 1 экземпляр класса
         list.add(v);
     }
 

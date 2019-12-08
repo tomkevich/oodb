@@ -16,7 +16,7 @@ public class JsonReader {
             BufferedReader br3 = new BufferedReader(new FileReader("Snacks.json"));
             BufferedReader br4 = new BufferedReader(new FileReader("AlcoholicDrink.json"));
             BufferedReader br5 = new BufferedReader(new FileReader("SoftDrink.json"));
-
+            //создаем экземпляр класса 
             VegetarianMeal[] obj = gson.fromJson(br, VegetarianMeal[].class);
             MainDish[] obj2 = gson.fromJson(br2, MainDish[].class);
             Snacks[] obj3 = gson.fromJson(br3, Snacks[].class);

@@ -3,11 +3,15 @@ package lab2;
 import Classes.Menu;
 import Classes.SoftDrink;
 import Classes.VegetarianMeal;
+import lab2.service.Search;
+import lab2.service.Sort;
 
 public class CafeTestDrive {
     public static void main(String[] args) {
         JsonWriter w = new JsonWriter();
         JsonReader r = new JsonReader();
+        Search s = new Search();
+        Sort sr = new Sort();
 
 //        добавляем новые блюда
         VegetarianMeal.addNewVegetarian("Salad", "This is vegetarian meal!", 500, Menu.vegetarianMeals);
@@ -18,8 +22,12 @@ public class CafeTestDrive {
         SoftDrink.addNewSoftDrink("Mohito", 450.0, 250, Menu.softDrinks);
 
 //        запись в Json формат
-        w.toJson();
+//        w.toJson();
 //        из json формата
-        r.fromJson();
+//        r.fromJson();
+
+//        s.FIND_VEGETARIAN_BY_MANE();
+        sr.SORT_VEGETARIAN_BY_NAME();
+        System.out.println(Menu.vegetarianMeals.toString());
     }
 }

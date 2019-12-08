@@ -9,11 +9,7 @@ public class VegetarianMeal extends Meal {
     public VegetarianMeal(String name, String description, int price) {
         super(name, description, price);
     }
-
-    public VegetarianMeal() {
-        super(); // вызов конструктора супер-класса
-    }
-
+    
     ;
 
     //    создание нового блюда

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<menu>
+    <SoftDrinks>
+        <SoftDrink>
+            <amount>350.0</amount>
+            <name>Lemonade</name>
+            <price>150</price>
+        </SoftDrink>
+        <SoftDrink>
+            <amount>450.0</amount>
+            <name>Mohito</name>
+            <price>250</price>
+        </SoftDrink>
+    </SoftDrinks>
+    <VegetarianMeals>
+        <VegetarianMeal>
+            <description>This is vegetarian meal!</description>
+            <name>Salad</name>
+            <price>500</price>
+        </VegetarianMeal>
+        <VegetarianMeal>
+            <description>This is also vegetarian meal</description>
+            <name>Cheesecakes</name>
+            <price>650</price>
+        </VegetarianMeal>
+    </VegetarianMeals>
+</menu>

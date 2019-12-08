@@ -9,9 +9,6 @@ public class SoftDrink extends Drink {
         super(name, amount, price);
     }
 
-    public SoftDrink(){
-        super();
-    }
 
     //    создание нового напитка
     public static void addNewSoftDrink(String name, double amount, int price, List<SoftDrink> listOfDrink){
